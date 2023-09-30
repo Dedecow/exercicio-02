@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        String arquivo = "Documentos/arquivo.csv";
+        String arquivo = "C:\\Users\\Andre\\OneDrive\\Documentos\\ex05\\megasena.txt";
         ArrayList<Concurso> concursos = new ArrayList<>();
 
         try {
