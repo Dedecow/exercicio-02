@@ -1,8 +1,8 @@
 package br.org.senai.ava.modulo02.semana02.exercicio03;
 
 public class Retangulo {
-    float comprimento = 1f;
-    float largura = 1f;
+    private float comprimento = 1f;
+    private float largura = 1f;
 
     public Retangulo(float comprimento, float largura) {
         this.comprimento = comprimento;
