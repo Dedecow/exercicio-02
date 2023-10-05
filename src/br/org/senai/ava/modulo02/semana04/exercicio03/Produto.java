@@ -42,6 +42,6 @@ public class Produto implements Tributavel{
         this.aliquotaICMS = aliquotaICMS;
     }
     public String toString(){
-        return "Produto: " + nome + ", Valor: R$" + valor + ", Aliquota ICMS: " + (aliquotaICMS * 100) + "%";
+        return "Produto: " + nome + ", Valor: R$" + valor + ", Aliquota ICMS: " + (aliquotaICMS) + "%";
     }
 }
