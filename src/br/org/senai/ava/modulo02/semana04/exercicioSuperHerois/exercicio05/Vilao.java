@@ -8,6 +8,13 @@ public class Vilao extends Personagem {
     private int habilidadeVilaoValor;
 
     public Vilao() { };
+
+    public Vilao(String nome, int chakra, int sagacidadeInteligencia, int habilidadeDeCombate, int forcaFisica, int velocidade, int resistencia, int experienciaDeBatalha, String habilidadeVilaoNome, int habilidadeVilaoValor) {
+        super(nome, chakra, sagacidadeInteligencia, habilidadeDeCombate, forcaFisica, velocidade, resistencia, experienciaDeBatalha);
+        this.habilidadeVilaoNome = habilidadeVilaoNome;
+        this.habilidadeVilaoValor = habilidadeVilaoValor;
+    }
+
     public void definirAtributosDoVilao(String nome, int chakra, int sagacidadeInteligencia, int habilidadeDeCombate, int forcaFisica, int velocidade, int resistencia, String habilidadeVilaoNome) {
         super.setAtributos(nome, chakra, sagacidadeInteligencia, habilidadeDeCombate, forcaFisica, velocidade, resistencia, 0);
         this.habilidadeVilaoNome = habilidadeVilaoNome;

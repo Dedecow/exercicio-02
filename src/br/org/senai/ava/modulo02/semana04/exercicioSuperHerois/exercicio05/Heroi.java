@@ -9,6 +9,12 @@ public class Heroi extends Personagem {
 
     public Heroi( ) { };
 
+    public Heroi(String nome, int chakra, int sagacidadeInteligencia, int habilidadeDeCombate, int forcaFisica, int velocidade, int resistencia, int experienciaDeBatalha, String habilidadeHeroiNome, int habilidadeHeroiValor) {
+        super(nome, chakra, sagacidadeInteligencia, habilidadeDeCombate, forcaFisica, velocidade, resistencia, experienciaDeBatalha);
+        this.habilidadeHeroiNome = habilidadeHeroiNome;
+        this.habilidadeHeroiValor = habilidadeHeroiValor;
+    }
+
     public void definirAtributosDoHeroi(String nome, int chakra, int sagacidadeInteligencia, int habilidadeDeCombate, int forcaFisica, int velocidade, int resistencia, String habilidadeHeroiNome) {
         super.setAtributos(nome, chakra, sagacidadeInteligencia, habilidadeDeCombate, forcaFisica, velocidade, resistencia, 0);
         this.habilidadeHeroiNome = habilidadeHeroiNome;
