@@ -11,13 +11,10 @@ public class TesteConteCorrente {
         contaCorrente.sacar(70.05);
         System.out.printf("Saldo após saque: R$%.2f%n", contaCorrente.ObterSaldoAtual());
 
-        // Testando saque com valor inválido
         contaCorrente.sacar(-100.0);
 
-        // Testando depósito com valor inválido
         contaCorrente.depositar(-50.0);
 
-        // Testando saque com saldo insuficiente
         contaCorrente.sacar(100_000.0);
         System.out.printf("Saldo final: R$%.2f%n", contaCorrente.ObterSaldoAtual());
 
