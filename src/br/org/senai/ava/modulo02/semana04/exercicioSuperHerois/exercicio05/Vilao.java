@@ -8,44 +8,28 @@ public class Vilao extends Personagem {
     private int habilidadeVilaoValor;
 
     public Vilao() { };
+    public void definirAtributosDoVilao(String nome, int chakra, int sagacidadeInteligencia, int habilidadeDeCombate, int forcaFisica, int velocidade, int resistencia, String habilidadeVilaoNome) {
+        super.setAtributos(nome, chakra, sagacidadeInteligencia, habilidadeDeCombate, forcaFisica, velocidade, resistencia, 0);
+        this.habilidadeVilaoNome = habilidadeVilaoNome;
+        this.habilidadeVilaoValor = Vilao.getHabilidadeVilaoValor();
+    }
 
     public void definirAtributosDoVilao() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite o nome do vilão:");
-        String nome = scanner.nextLine();
-
-        System.out.println("Digite o valor de Chakra:");
-        int chakra = scanner.nextInt();
-
-        System.out.println("Digite o valor de Sagacidade/Inteligência:");
-        int sagacidadeInteligencia = scanner.nextInt();
-
-        System.out.println("Digite o valor de Habilidade de Combate:");
-        int habilidadeDeCombate = scanner.nextInt();
-
-        System.out.println("Digite o valor de Força Física:");
-        int forcaFisica = scanner.nextInt();
-
-        System.out.println("Digite o valor de Velocidade:");
-        int velocidade = scanner.nextInt();
-
-        System.out.println("Digite o valor de Resistência:");
-        int resistencia = scanner.nextInt();
-
-        System.out.println("Digite o valor de Experiência de Batalha:");
-        int experienciaDeBatalha = scanner.nextInt();
-
-        System.out.println("Digite o nome da habilidade do vilão:");
+        String nome = "Sasuke Uchiha";
+        int chakra = 12;
+        int sagacidadeInteligencia = 5;
+        int habilidadeDeCombate = 10;
+        int forcaFisica = 8;
+        int velocidade = 9;
+        int resistencia = 8;
+        int experienciaDeBatalha = 0;
         scanner.nextLine(); // Limpa a quebra de linha pendente
-        String habilidadeVilaoNome = scanner.nextLine();
+        String habilidadeVilaoNome = "Maldição do Ódio";
 
-        scanner.close();
-
-        // Chame o construtor da classe base para configurar os atributos herdados.
         super.setAtributos(nome, chakra, sagacidadeInteligencia, habilidadeDeCombate, forcaFisica, velocidade, resistencia, experienciaDeBatalha);
 
-        // Configure os atributos específicos do vilão.
         this.habilidadeVilaoNome = habilidadeVilaoNome;
         this.habilidadeVilaoValor = Vilao.getHabilidadeVilaoValor();
     }
@@ -75,5 +59,6 @@ public class Vilao extends Personagem {
     }
 
 
-
+    public void definirAtributosDoVilao(String sasuke_uchiha, String mangekyou_sharingan) {
+    }
 }

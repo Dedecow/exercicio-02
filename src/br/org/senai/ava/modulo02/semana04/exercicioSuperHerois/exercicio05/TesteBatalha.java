@@ -11,8 +11,12 @@ public class TesteBatalha {
         try {
 
             Heroi heroi = new Heroi();
+            heroi.definirAtributosDoHeroi("Naruto Uzumaki", "Modo Sábio dos Seis Caminhos");
 
             Vilao vilao = new Vilao();
+            vilao.definirAtributosDoVilao("Sasuke Uchiha", "Mangekyou Sharingan");
+
+
 
             System.out.println("Personagens:");
             heroi.apresentar();

@@ -8,38 +8,27 @@ public class Heroi extends Personagem {
     private int habilidadeHeroiValor;
 
     public Heroi( ) { };
+
+    public void definirAtributosDoHeroi(String nome, int chakra, int sagacidadeInteligencia, int habilidadeDeCombate, int forcaFisica, int velocidade, int resistencia, String habilidadeHeroiNome) {
+        super.setAtributos(nome, chakra, sagacidadeInteligencia, habilidadeDeCombate, forcaFisica, velocidade, resistencia, 0);
+        this.habilidadeHeroiNome = habilidadeHeroiNome;
+        this.habilidadeHeroiValor = Heroi.getHabilidadeHeroiValor();
+    }
+
     public void definirAtributosDoHeroi() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite o nome do herói:");
-        String nome = scanner.nextLine();
-
-        System.out.println("Digite o valor de Chakra:");
-        int chakra = scanner.nextInt();
-
-        System.out.println("Digite o valor de Sagacidade/Inteligência:");
-        int sagacidadeInteligencia = scanner.nextInt();
-
-        System.out.println("Digite o valor de Habilidade de Combate:");
-        int habilidadeDeCombate = scanner.nextInt();
-
-        System.out.println("Digite o valor de Força Física:");
-        int forcaFisica = scanner.nextInt();
-
-        System.out.println("Digite o valor de Velocidade:");
-        int velocidade = scanner.nextInt();
-
-        System.out.println("Digite o valor de Resistência:");
-        int resistencia = scanner.nextInt();
-
-        System.out.println("Digite o valor de Experiência de Batalha:");
-        int experienciaDeBatalha = scanner.nextInt();
-
-        System.out.println("Digite o nome da habilidade do herói:");
+        String nome = "Naruto Uzumaki";
+        int chakra = 12;
+        int sagacidadeInteligencia = 5;
+        int habilidadeDeCombate = 10;
+        int forcaFisica = 8;
+        int velocidade = 9;
+        int resistencia = 8;
+        int experienciaDeBatalha = 0;
         scanner.nextLine(); // Limpa a quebra de linha pendente
-        String habilidadeHeroiNome = scanner.nextLine();
+        String habilidadeHeroiNome = "Modo Sábio dos Seis Caminhos";
 
-        scanner.close();
 
         super.setAtributos(nome, chakra, sagacidadeInteligencia, habilidadeDeCombate, forcaFisica, velocidade, resistencia, experienciaDeBatalha);
 
@@ -72,4 +61,6 @@ public class Heroi extends Personagem {
         System.out.println( "Pela justiça e pela paz! " + getHabilidadeHeroiNome() + "(" +getHabilidadeHeroiValor() + ")");
     }
 
+    public void definirAtributosDoHeroi(String naruto_uzumaki, String modo_sábio_dos_seis_caminhos) {
+    }
 }
