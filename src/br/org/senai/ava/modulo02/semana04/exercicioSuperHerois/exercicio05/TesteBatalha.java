@@ -9,31 +9,32 @@ import java.util.Scanner;
 public class TesteBatalha {
     public static void main(String[] args) {
         try {
-
+            Scanner sc = new Scanner(System.in);
+            System.out.println( " Digite um nome para o Heroi:");
             String nomeHeroi = "Naruto Uzumaki";
-            int chakraHeroi = 3;
-            int sagacidadeInteligenciaHeroi = 3;
-            int habilidadeDeCombateHeroi = 3;
-            int forcaFisicaHeroi = 3;
-            int velocidadeHeroi = 3;
-            int resistenciaHeroi = 3;
-            int experienciaDeBatalhaHeroi = 3;
+            int chakraHeroi = 12;
+            int sagacidadeInteligenciaHeroi = 8;
+            int habilidadeDeCombateHeroi = 5;
+            int forcaFisicaHeroi = 6;
+            int velocidadeHeroi = 5;
+            int resistenciaHeroi = 7;
+            int experienciaDeBatalhaHeroi = 7;
             String habilidadeHeroiNome = "Modo Sábio dos Seis Caminhos";
-            int habilidadeHeroiValor = 3;
+            int habilidadeHeroiValor = Heroi.getHabilidadeHeroiValor();
 
             Heroi heroi = new Heroi(nomeHeroi, chakraHeroi, sagacidadeInteligenciaHeroi, habilidadeDeCombateHeroi, forcaFisicaHeroi, velocidadeHeroi, resistenciaHeroi, experienciaDeBatalhaHeroi, habilidadeHeroiNome, habilidadeHeroiValor);
             heroi.definirAtributosDoHeroi("Naruto Uzumaki", "Modo Sábio dos Seis Caminhos");
 
             String nomeVilao = "Exemplo Vilão";
-            int chakraVilao = 2;
-            int sagacidadeInteligenciaVilao = 2;
-            int habilidadeDeCombateVilao = 2;
-            int forcaFisicaVilao = 2;
-            int velocidadeVilao = 2;
-            int resistenciaVilao = 2;
-            int experienciaDeBatalhaVilao = 2;
+            int chakraVilao = 10;
+            int sagacidadeInteligenciaVilao = 8;
+            int habilidadeDeCombateVilao = 7;
+            int forcaFisicaVilao = 6;
+            int velocidadeVilao = 5;
+            int resistenciaVilao = 7;
+            int experienciaDeBatalhaVilao = 7;
             String habilidadeVilaoNome = "Habilidade Vilão";
-            int habilidadeVilaoValor = 2;
+            int habilidadeVilaoValor = Vilao.getHabilidadeVilaoValor();
 
             Vilao vilao = new Vilao(nomeVilao, chakraVilao, sagacidadeInteligenciaVilao, habilidadeDeCombateVilao, forcaFisicaVilao, velocidadeVilao, resistenciaVilao, experienciaDeBatalhaVilao, habilidadeVilaoNome, habilidadeVilaoValor);
 
