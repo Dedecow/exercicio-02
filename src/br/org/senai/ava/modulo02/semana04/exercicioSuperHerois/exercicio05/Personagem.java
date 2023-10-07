@@ -61,4 +61,7 @@ public class Personagem {
         }
 
     }
+
+    protected void setAtributos(String nome, int chakra, int sagacidadeInteligencia, int habilidadeDeCombate, int forcaFisica, int velocidade, int resistencia, int experienciaDeBatalha) {
+    }
 }
