@@ -13,7 +13,8 @@ public class TesteNomeCompleto {
 
         NomeDoUsuario nomeDoUsuario = new NomeDoUsuario(nome, sobrenome);
 
-        System.out.println(" Nome Completo " + nomeDoUsuario.nomeCompleto());
+        System.out.println(" Seu nome completo é: " + nomeDoUsuario.nomeCompleto() + " e tem: " + nomeDoUsuario.contarLetras());
+
 
     }
 }

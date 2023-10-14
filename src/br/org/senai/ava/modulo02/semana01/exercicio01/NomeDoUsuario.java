@@ -30,6 +30,12 @@ public class NomeDoUsuario {
         return nome+ " "+ sobrenome;
     }
 
+    public int contarLetras(){
+        String nomeCompleto = nomeCompleto();
+        nomeCompleto = nomeCompleto.replaceAll("\\s", "");
+        return nomeCompleto.length();
+    }
+
     @Override
     public String toString() {
         return "NomeDoUsuario{" +
