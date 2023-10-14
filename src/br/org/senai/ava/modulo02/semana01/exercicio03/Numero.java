@@ -22,7 +22,7 @@ public class Numero {
         if (restoDivisao() == 0) {
             return "O número " + numero + " é um número Par.";
         } else {
-            return "O número " + numero + " Não é par.";
+            return "O número " + numero + " Não é par. É impar.";
         }
     }
 }
