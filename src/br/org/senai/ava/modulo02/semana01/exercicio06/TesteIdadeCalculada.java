@@ -1,4 +1,6 @@
-package br.org.senai.ava.modulo02.semana01.exercicio05;
+package br.org.senai.ava.modulo02.semana01.exercicio06;
+
+import br.org.senai.ava.modulo02.semana01.exercicio06.IdadeCalculada;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
